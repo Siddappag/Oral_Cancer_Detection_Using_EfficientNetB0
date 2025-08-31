@@ -24,30 +24,54 @@ A web-based deep learning application for early detection of **oral cancer** usi
 |-------------|------------------------|
 | Frontend    | Streamlit  |
 | Backend     | Python     |
-| Model       | TensorFlow, Keras (EfficientNetB0 or custom CNN) |
+| Model       | TensorFlow, Keras (EfficientNetB0) |
 | Deployment  | Localhost / (Optional: Render, Streamlit, Hugging Face Spaces) |
 | Dataset     | Curated dataset of oral lesion images |
 
 ---
 
-** Install Dependencies**
+Install Dependencies
 Make sure you have Python 3.8+ and pip installed.
 pip install -r requirements.txt
 
-** Run the Application**
-python app.py
-The app will run locally at: http://127.0.0.1:5000/
+---
 
-**📊 Model Training**
+## 📊 Model Training
 
 The model is trained using a CNN and/or EfficientNetB0.
 Class weights are used to address class imbalance.
 You can retrain using the train_model.ipynb notebook with your own dataset.
 
-**🧪 Future Enhancements**
+---
+
+## 🧪 Future Enhancements
 
 Add user authentication and upload history.
 Improve dataset diversity and quality.
 Include heatmaps or Grad-CAM for model interpretability.
 Deploy on cloud (Render, Hugging Face Spaces, or Streamlit Cloud).
 
+---
+
+# Result
+## Metrics
+| ![Confusion Matrix](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-05-27%20221850.png?raw=true) |
+|:--:
+| *Confusion Matrix* |
+| ![ROC Curve](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-05-27%20221340.png?raw=true) |
+|:--:|
+| *ROC Curve* |
+| ![Training and Validation Loss](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-07-29%20210918.png?raw=true) |
+|:--:|
+| *Training and Validation Loss* |
+| ![Training and Validation Accuracy](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-07-29%20210908.png?raw=true) |
+|:--:|
+| *Training and Validation Accuracy* |
+
+## Interface
+| ![Interface](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-05-22%20185742.png?raw=true) |
+|:--:|
+| *Interface* |
+| ![Interface with result](https://github.com/Shreyas5848/Oral_Cancer_Detection_Using_EfficientNetB0/blob/main/Screenshot%202025-05-22%20185829.png?raw=true) |
+|:--:|
+| *Interface with result* |
